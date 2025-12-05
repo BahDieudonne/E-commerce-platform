@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <title>login</title> 
+    <title>sign-up</title>
 </head>
 <body>
   <!-- ========== Primary Header ========== -->
@@ -14,12 +14,12 @@
       <nav>
         <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
           <li><a class="fs-100 fs-montserrat bold-500" href="product.html">Products</a></li>
-          <li><a class="fs-100 fs-montserrat bold-500" href="signUp.html">Sign Up</a></li>
+          <li><a class="fs-100 fs-montserrat bold-500" href="login.html">Login</a></li>
       </nav>
     </div>
 
     <div class="header-login flex">
-      <p class="active fs-100 fs-montserrat bold-500"><a href="signUp.html">Sign Up</a></p>
+      <p class="active fs-100 fs-montserrat bold-500"><a href="Login.html">Login</a></p>
       <i class="fas fa-search"></i>
       <i id="cart-box" aria-controls="cart-icon" class="fas fa-shopping-bag"></i>
     </div>
@@ -28,30 +28,37 @@
   <!-- =======  Form Section ======= -->
   <div class="form">
     <div class="container" id="container">
-      <div class="form-container sign-in">
+      <div class="form-container sign-up">
         <form>
-          <h1>Sign In</h1>
+          <h1>Create Account</h1>
           <div class="social-icons">
             <a href="#" class="icon"><i class="fa-brands fa-google"></i>></a>
             <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
             <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
           </div>
-          <span>or use your email password</span>
-          <input type="email" placeholder="Email" required>
-          <input type="password" placeholder="Password" required>
-          <a href="#" class="forgot-password">Forgot Your Password?</a>
-          <button>Sign In</button>
+          <span>or use your email for registration</span>
+          <input type="username" placeholder="username" name="username" required>
+          <input type="email" placeholder="email" name="email" required>
+          <input type="password" placeholder="password" name="password" required>
+          <input type="age" placeholder="age" name="age" required>
+          <button>Submit</button>
         </form>
       </div>
       <div class="toggle-container">
         <div class="toggle">
-          <div class="toggle-panel toggle-left">
-            <h1>Welcome Back</h1>
-            <p>Enter your Personal details to use all of site features</p>
-            <button class="hidden" id="login">Sign In</button>
+          <div class="toggle-panel toggle-right">
+            <h1>Hello Customer</h1>
+            <p>Register with your Personal details to use all of site features</p>
+            <button class="hidden" id="register">Sign up</button>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="image">
+        <img src="/Images/e-commerce (2).png" alt="">
       </div>
     </div>
   </div>

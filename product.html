@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+  <div class="navbar">
+    <div class="logo">E-Commerce</div>
+
+    <div class="login">
+      <a href="login.html">Login</a>
+      <a href="signUp.html">Sign Up</a>
+    </div>
+
+    <div class="cart" onclick="alert('Cart clicked!')">
+      <i class="fa-solid fa-basket-shopping"></i>
+      <div class="cart-count" id="cartCount">0</div>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <h1>Explore Our New Products</h1>
+    <p>Find high-quality products at affordable prices.</p>
+  </div>
+
+  <!-- ===== PRODUCTS ===== -->
+  <div class="products">
+    <div class="product-card">
+      <img src="images/1 (1).jpg" alt="Product 1">
+      <h3>Product 1</h3>
+      <div class="price">5000fcfa</div>
+      <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/1 (1).png" alt="Product 2">
+      <h3>Product 2</h3>
+      <div class="price">5000fcfa</div>
+      <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/1 (4).png" alt="Product 3">
+      <h3>Product 3</h3>
+      <div class="price">5000fcfa</div>
+      <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="images/1 (3).png" alt="Product 4">
+      <h3>Product 4</h3>
+      <div class="price">5000fcfa</div>
+      <button class="add-btn" onclick="addToCart()">Add to Cart</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 MyStore. All rights reserved.
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
